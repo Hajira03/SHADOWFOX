@@ -1,33 +1,43 @@
-# 🏠 Boston House Price Prediction
+🏠 Boston House Price Prediction
 
-This beginner-level project is part of the ShadowFox AIML Internship. It uses machine learning to predict house prices in Boston using the Boston Housing dataset.
+This beginner-level project was completed as part of the ShadowFox AIML Internship. The goal is to predict Boston housing prices using a Linear Regression model trained on the Boston Housing dataset.
 
-## 📌 Objective
-Build a regression model that predicts house prices (`MEDV`) based on features like:
-- crime rate (CRIM)
-- number of rooms (RM)
-- accessibility to highways (RAD)
-- tax rate (TAX)
-- and more...
+📌 Objective
 
-## 💻 Tools Used
-- Python
-- pandas, numpy
-- matplotlib, seaborn
-- scikit-learn
+The aim of this project is to build a regression model that predicts median house prices (MEDV) based on various factors such as:
+CRIM – Crime rate
+RM – Average number of rooms per dwelling
+TAX – Property tax rate
+LSTAT – % lower status population
+...and more.
 
-## 🧠 Steps Involved
-1. Load and clean the dataset
-2. Handle non-numeric data and missing values
-3. Visualize feature correlation
-4. Train-test split (80/20)
-5. Build Linear Regression model
-6. Evaluate with MSE and R² Score
-7. Plot predicted vs actual house prices
+💻 Tools & Libraries Used
 
-## 📊 Results
-- ✅ Model trained successfully
-- ✅ Plotted actual vs predicted prices
-- ✅ Achieved an R² score around 0.7–0.8
+Python
+Pandas, NumPy
+Matplotlib, Seaborn
+scikit-learn
 
-## 📁 Repository Structure
+🧠 Steps Followed
+
+1.Load the Dataset
+      Imported CSV data into a Pandas DataFrame.
+2.Data Cleaning
+      Removed unwanted header rows
+      Converted object columns to numeric
+      Handled missing values
+3.Exploratory Data Analysis (EDA)
+      Checked correlations with heatmaps
+      Visualized relationships between features and target
+4.Model Training
+      Split data into train (80%) and test (20%) sets
+      Trained a Linear Regression model
+5.Model Evaluation
+     Calculated Mean Squared Error (MSE) and R² Score
+    Plotted Actual vs Predicted prices
+
+📊 Results
+
+Mean Squared Error (MSE): ~22 (varies on run)
+R² Score: ~0.7–0.8
+Scatter plot shows a clear positive relationship between actual and predicted values.
